@@ -9,6 +9,12 @@ return {
     },
   },
   {
+    "linux-cultist/venv-selector.nvim",
+    opts = {
+      fd_binary_name = "fdfind",
+    },
+  },
+  {
     "rebelot/heirline.nvim",
     opts = function(_, opts)
       local status = require "astronvim.utils.status"
@@ -120,4 +126,34 @@ return {
       return opts
     end,
   },
+  -- {
+  --   "nvim-neo-tree/neo-tree.nvim",
+  --   cmd = "Neotree",
+  --   keys = {
+  --     {
+  --       "<leader>fe",
+  --       function() require("neo-tree.command").execute { toggle = true, dir = require("user.util").get_root() } end,
+  --       desc = "Explorer NeoTree (root dir)",
+  --     },
+  --     {
+  --       "<leader>fE",
+  --       function() require("neo-tree.command").execute { toggle = true, dir = vim.loop.cwd() } end,
+  --       desc = "Explorer NeoTree (cwd)",
+  --     },
+  --     { "<leader>e", "<leader>fe", desc = "Explorer NeoTree (root dir)", remap = true },
+  --     { "<leader>E", "<leader>fE", desc = "Explorer NeoTree (cwd)", remap = true },
+  --   },
+  --   opts = {
+  --     filesystem = {
+  --       bind_to_cwd = true,
+  --       follow_current_file = true,
+  --       use_libuv_file_watcher = true,
+  --     },
+  --     buffers = {
+  --       bind_to_cwd = true,
+  --       follow_current_file = true,
+  --       use_libuv_file_watcher = true,
+  --     },
+  --   },
+  -- },
 }

@@ -6,6 +6,7 @@ return {
 
   { import = "astrocommunity.colorscheme.everforest" },
   { import = "astrocommunity.indent.indent-blankline-nvim" },
+  { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.indent.mini-indentscope" },
   { import = "astrocommunity.scrolling.mini-animate" },
   { import = "astrocommunity.motion.harpoon" },
